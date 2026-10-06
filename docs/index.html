@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unbanner – Support</title>
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1d1d1f;--muted:#6e6e73;--card:#f5f5f7;--accent:#f27a1a}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--muted:#a1a1a6;--card:#1c1c1e}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 16px 64px}
+header{text-align:center;margin-bottom:28px}
+header img{width:96px;height:96px;border-radius:22px}
+h1{margin:12px 0 4px;font-size:32px}
+h2{margin:36px 0 12px;font-size:22px}
+.muted{color:var(--muted)}
+.card{background:var(--card);border-radius:14px;padding:4px 18px;margin:12px 0}
+details{padding:12px 0;border-top:1px solid rgba(127,127,127,.25)}
+details:first-child{border-top:0}
+summary{font-weight:600;cursor:pointer}
+details p{margin:8px 0 4px;color:var(--muted)}
+a{color:var(--accent)}
+.btns a{display:inline-block;margin:6px 8px 6px 0;padding:10px 16px;border-radius:10px;background:var(--accent);color:#000;text-decoration:none;font-weight:600}
+.lang{text-align:right;font-size:15px}
+footer{margin-top:48px;font-size:14px;text-align:center}
+</style>
+</head>
+<body><main>
+
+<p class="lang"><a href="#en">English</a> · <a href="#zh">简体中文</a></p>
+<header>
+<img src="icon.png" alt="Unbanner icon">
+<h1>Unbanner</h1>
+<p class="muted">Stay on the web. No more “Open in App”.<br>留在网页里，不再被「打开 App」打扰。</p>
+</header>
+
+<section id="en">
+<h2>Get help</h2>
+<p>Something not working, or a site Unbanner should cover? The fastest way is the button inside the extension: in Safari, open the page, tap the Unbanner icon, then <b>“Not blocked or broken? Report this site”</b>. It drafts an email with the page address and version info.</p>
+<div class="btns"><a href="mailto:unbanner.help@outlook.com?subject=Unbanner%20feedback">Email unbanner.help@outlook.com</a><a href="https://github.com/kevenYLi/unbanner-support/issues/new/choose">Open a GitHub issue</a></div>
+<p class="muted">GitHub issues are public. Don’t post links or screenshots that contain personal information.</p>
+<h2>Turn on Unbanner</h2>
+<ol><li>Open <b>Settings</b>.</li><li>Go to <b>Apps</b> → <b>Safari</b>.</li><li>Tap <b>Extensions</b> → <b>Unbanner</b>, then turn on <b>Allow Extension</b>.</li><li>Under <b>Other Websites</b>, choose <b>Allow</b>. Without this, Unbanner can’t work on web pages.</li></ol>
+<p class="muted">iOS 17 and earlier: in step 2, go to Settings → Safari.</p>
+<h2>FAQ</h2>
+<div class="card"><details><summary>Why is the “Open in the … app” banner at the top of Safari still there?</summary><p>When the app is installed on your device (for example YouTube, Reddit, X or Amazon), Safari shows that banner itself. It’s part of Safari, not the web page, so no extension can remove it. Unbanner removes it when the app isn’t installed, and removes the pop-ups and buttons the website adds.</p></details><details><summary>Why do some links take about a second to open?</summary><p>Some links (for example YouTube, X, Reddit) would otherwise jump straight into the app. Unbanner holds these links for about a second so they open in Safari instead. Links that can’t open an app, and links within the same site, open right away.</p></details><details><summary>How do I know Unbanner is working?</summary><p>The box at the top of this page shows how many prompts have been removed. You can also tap the Unbanner icon in Safari to see what was removed on the current page.</p></details><details><summary>A website looks broken. What should I do?</summary><p>In Safari, tap the Unbanner icon → “Turn off on this site”, then reload. Please send us feedback (below) with the site’s address so we can fix the rule.</p></details><details><summary>Why does it ask for access to all websites? Does it read my data?</summary><p>Prompts appear on many different sites, so Unbanner needs to run on them to hide those prompts. It only looks for “Open in App” prompts and links to apps. It doesn’t collect, store or send your browsing data.</p></details><details><summary>Some links from search results still open the app. Why?</summary><p>Search results and link-redirect pages don’t show the final address until you leave them, so Unbanner can’t tell where they lead. We’re working on it.</p></details></div>
+</section>
+
+<section id="zh" lang="zh-Hans">
+<h2>获取帮助</h2>
+<p>哪里不好用，或者希望支持某个网站？最快的办法是用插件里的按钮：在 Safari 里打开那个网页，点 Unbanner 图标，再点<b>「这个网站没挡住 / 坏了？反馈给我们」</b>，会自动写好一封带网址和版本信息的邮件。</p>
+<div class="btns"><a href="mailto:unbanner.help@outlook.com?subject=Unbanner%20%E5%8F%8D%E9%A6%88">发邮件到 unbanner.help@outlook.com</a><a href="https://github.com/kevenYLi/unbanner-support/issues/new/choose">在 GitHub 提 issue</a></div>
+<p class="muted">GitHub 上的 issue 是公开的，请不要贴带个人信息的链接或截图。</p>
+<h2>打开 Unbanner</h2>
+<ol><li>打开<b>「设置」</b>。</li><li>进入<b>「App」</b>→<b>「Safari浏览器」</b>。</li><li>点<b>「扩展」</b>→<b>「Unbanner」</b>，打开<b>「允许扩展」</b>。</li><li>在<b>「其他网站」</b>里选<b>「允许」</b>。不选的话，插件没法在网页上工作。</li></ol>
+<p class="muted">iOS 17 及更早：第 2 步是「设置 → Safari浏览器」。</p>
+<h2>常见问题</h2>
+<div class="card"><details><summary>为什么 Safari 顶部「在“…”App 中打开」的横幅还在？</summary><p>手机上装了那个 App 时（比如 B 站、小红书、YouTube、Amazon），这条横幅是 Safari 自己显示的，属于 Safari 的界面，不是网页内容，任何插件都去不掉。没装那个 App 时，Unbanner 能去掉它；网站自己做的弹窗和按钮，Unbanner 都会去掉。</p></details><details><summary>为什么有的链接要等一秒左右才打开？</summary><p>有些链接（比如 B 站、小红书、YouTube）一点就会直接跳进 App。Unbanner 会把这类链接先拦下、等一秒左右再打开，这样就留在 Safari 里。不会跳 App 的链接、同一个网站里的链接，都会立刻打开。</p></details><details><summary>怎么知道插件在工作？</summary><p>这一页最上面会显示累计去掉了多少个提示。也可以在 Safari 里点 Unbanner 图标，看当前网页去掉了什么。</p></details><details><summary>某个网站显示不正常怎么办？</summary><p>在 Safari 里点 Unbanner 图标 →「在这个网站停用」，再刷新页面。也请用下面的「反馈问题」把网址发给我们，我们会修好规则。</p></details><details><summary>为什么要「允许所有网站」？会读我的数据吗？</summary><p>「打开 App」提示出现在很多不同的网站上，插件要在这些网站上运行才能去掉它们。插件只找「打开 App」提示和跳 App 的链接，不收集、不保存、也不上传你的浏览内容。</p></details><details><summary>为什么从搜索结果点进去，有时还是会进 App？</summary><p>搜索结果和外链中转页在跳走之前看不出最终去哪个网站，插件认不出来。我们还在想办法。</p></details></div>
+</section>
+
+<footer class="muted"><a href="./">Support</a> · <a href="privacy.html">Privacy</a> · <a href="https://github.com/kevenYLi/unbanner-support">GitHub</a></footer>
+</main></body></html>

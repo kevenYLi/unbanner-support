@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Email us privately / 私下发邮件
+    url: mailto:unbanner.help@outlook.com
+    about: Prefer not to post publicly? Email us. 不想公开的问题请发邮件。
+  - name: FAQ / 常见问题
+    url: https://kevenyli.github.io/unbanner-support/
+    about: Check the FAQ first. 先看看常见问题。

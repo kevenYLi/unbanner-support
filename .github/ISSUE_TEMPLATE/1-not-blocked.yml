@@ -1,0 +1,45 @@
+name: "A site still nags me / 网站提示没挡住"
+description: An “Open in App” pop-up, banner or button is still there, or a link still opens the app. 还有「打开 App」弹窗、横幅、按钮没去掉，或者点链接还是进了 App。
+title: "[Not blocked] <site>"
+labels: ["not blocked"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ Issues are public. Don't paste links or screenshots that contain personal information (account pages, private messages, order numbers).
+        ⚠️ issue 是公开的，请不要贴带个人信息的链接或截图（个人主页、私信、订单号等）。
+  - type: input
+    id: url
+    attributes:
+      label: Page address / 网址
+      description: The page where it happens. 出问题的网页。
+      placeholder: https://www.example.com/...
+    validations:
+      required: true
+  - type: dropdown
+    id: what
+    attributes:
+      label: What happened? / 遇到了什么？
+      options:
+        - A pop-up or banner is still there / 弹窗或横幅还在
+        - A link still opened the app / 点链接还是进了 App
+        - Safari asked "Open in the … app?" / Safari 弹出「在 … 中打开此页？」
+        - Other / 其他
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details / 详细描述
+      description: What do you see? A screenshot helps (cover personal info). 看到了什么？最好附截图（遮住个人信息）。
+  - type: input
+    id: versions
+    attributes:
+      label: Versions / 版本
+      description: Unbanner version (in the app), iOS version, logged in to the site or not. Unbanner 版本（App 首页最下面）、iOS 版本、是否登录了该网站。
+      placeholder: Unbanner 1.0.0 · iOS 18.6 · logged in
+  - type: markdown
+    attributes:
+      value: |
+        Note: if the app is installed, Safari's own "Open in the … app" banner at the top can't be removed by any extension.
+        注意：装了对应 App 时，Safari 顶部「在“…”App 中打开」的横幅是 Safari 自己的界面，任何插件都去不掉。

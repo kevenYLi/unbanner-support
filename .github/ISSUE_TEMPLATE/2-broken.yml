@@ -1,0 +1,29 @@
+name: "A page looks broken / 页面显示不正常"
+description: After turning Unbanner on, a page can't scroll, can't be tapped, or is missing content. 打开 Unbanner 后，页面滚不动、点不了、少了内容。
+title: "[Broken] <site>"
+labels: ["broken page"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Quick fix while we look at it: in Safari tap the Unbanner icon → "Turn off on this site", then reload.
+        临时解决：在 Safari 里点 Unbanner 图标 →「在这个网站停用」，再刷新。
+        ⚠️ Issues are public — no personal information, please. issue 是公开的，请勿贴个人信息。
+  - type: input
+    id: url
+    attributes:
+      label: Page address / 网址
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What's broken? / 哪里不正常？
+      description: What's missing or not working? Does it work after "Turn off on this site"? 缺了什么、哪里点不了？停用后是否正常？
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions / 版本
+      placeholder: Unbanner 1.0.0 · iOS 18.6

@@ -1,0 +1,17 @@
+name: "Please support a site / 希望支持某个网站"
+description: Suggest a site whose "Open in App" prompts Unbanner should handle. 推荐一个希望 Unbanner 处理的网站。
+title: "[Request] <site>"
+labels: ["site request"]
+body:
+  - type: input
+    id: site
+    attributes:
+      label: Site / 网站
+      placeholder: www.example.com
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What does it do? / 它怎么催你用 App？
+      description: Pop-up, banner, locked scrolling, links that jump into the app, "read more in the app"… 弹窗、横幅、锁住滚动、点链接跳 App、「App 内看全文」……
