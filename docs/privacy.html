@@ -27,13 +27,14 @@ footer{margin-top:48px;font-size:14px;text-align:center}
 </head>
 <body><main>
 
-<header><h1>Privacy Policy</h1><p class="muted">Unbanner for Safari · Last updated 2026-10-06 (rules download)</p></header>
+<header><h1>Privacy Policy</h1><p class="muted">Unbanner for Safari · Last updated 2026-10-07 (rules download from our server)</p></header>
 <h2>English</h2>
 <p>Unbanner does not collect, store or share any personal data.</p>
 <ul>
 <li>The Safari extension runs only on your device. It looks for “Open in App” prompts and links to apps on the pages you visit and hides or redirects them locally. Page contents and addresses never leave your device.</li>
 <li>The number of prompts removed is stored only on your device, to show that the extension is working.</li>
-<li>About every six hours, the extension downloads a rules file (text patterns and page selectors only, no code) from GitHub Pages (kevenyli.github.io). The request contains no personal information or browsing data. Like any web server, GitHub can see the IP address of the request; see GitHub’s privacy statement. We don’t receive or log it.</li>
+<li>About every six hours, the extension downloads a rules file (text patterns and page selectors only, no code). It first tries GitHub Pages (kevenyli.github.io); if that fails, it tries our own server, rules.unbanner.cn (hosted by Alibaba Cloud in mainland China). The request contains no personal information or browsing data.</li>
+<li>Like any web server, GitHub can see the IP address of the request; see GitHub’s privacy statement. We don’t receive it. When the request reaches our server, the server keeps a standard access log (IP address, time, file requested) for security and legal compliance, for no more than six months. We don’t use it to identify you and don’t share it unless required by law.</li>
 <li>If you email us or open a GitHub issue, we use what you send only to reply and fix the problem.</li>
 <li>No account, no analytics, no advertising, no tracking.</li>
 </ul>
@@ -44,7 +45,8 @@ footer{margin-top:48px;font-size:14px;text-align:center}
 <ul>
 <li>Safari 插件只在你的设备上运行：在你浏览的网页里找「打开 App」提示和跳 App 的链接，在本地隐藏或改为留在 Safari 打开。网页内容和网址不会离开你的设备。</li>
 <li>「累计去掉了多少个提示」只保存在你的设备上，用来显示插件在工作。</li>
-<li>插件大约每 6 小时从 GitHub Pages（kevenyli.github.io）下载一次规则文件（只有文字规则和网页元素选择器，没有代码）。请求里不含任何个人信息和浏览内容。和访问任何网站一样，GitHub 能看到这次请求的 IP 地址，见 GitHub 的隐私声明；我们拿不到、也不记录。</li>
+<li>插件大约每 6 小时下载一次规则文件（只有文字规则和网页元素选择器，没有代码）：先从 GitHub Pages（kevenyli.github.io）下载，下载不到再从我们自己的服务器 rules.unbanner.cn（阿里云，中国大陆）下载。请求里不含任何个人信息和浏览内容。</li>
+<li>和访问任何网站一样，GitHub 能看到这次请求的 IP 地址，见 GitHub 的隐私声明，我们拿不到。请求到了我们的服务器时，服务器会记录常规访问日志（IP 地址、时间、请求的文件），用于安全和依法合规，最多保留 6 个月；我们不用它识别你，除法律要求外不提供给任何人。</li>
 <li>你给我们发邮件或在 GitHub 提 issue 时，我们只用你提供的内容来回复和修复问题。</li>
 <li>没有账号、没有统计分析、没有广告、没有追踪。</li>
 </ul>
